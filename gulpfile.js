@@ -19,7 +19,7 @@ const runServer = () => {
     })
 }
 
-// HTML
+// HTML //
 
 // Compile HTML
 const compileHTML = () => {
@@ -73,8 +73,9 @@ const watchSass = () => {
     return watch('./app/src/sass/**', compileSass);
 }
 
-// LINTING
+// LINTING //
 
+// Lint the javascript
 const lint = () => {
     return src("./app/src/js/*.js")
         .pipe(eslint())
